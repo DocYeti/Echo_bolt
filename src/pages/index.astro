@@ -1,0 +1,112 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Eco Home Seasons - Sustainable Living in the Pacific Northwest">
+	<main>
+		<!-- Hero Section -->
+		<section class="relative h-screen flex items-center">
+			<div class="absolute inset-0 bg-[url('https://picsum.photos/seed/eco-home-hero/1920/1080')] bg-cover bg-center"></div>
+			<div class="absolute inset-0 bg-accent/40"></div>
+			<div class="container mx-auto px-4 relative text-background">
+				<h1 class="font-playfair text-5xl md:text-7xl mb-6">
+					Transform Your Home,<br />Season by Season
+				</h1>
+				<p class="text-xl md:text-2xl mb-8 max-w-2xl">
+					Discover sustainable solutions for your Pacific Northwest home that adapt with the changing seasons.
+				</p>
+				<a
+					href="/articles"
+					class="inline-block bg-primary text-accent px-8 py-3 rounded-lg font-semibold hover:bg-primary/90 transition-colors"
+				>
+					Explore Seasonal Tips
+				</a>
+			</div>
+		</section>
+
+		<!-- Featured Content -->
+		<section class="py-20">
+			<div class="container mx-auto px-4">
+				<h2 class="font-playfair text-4xl text-accent mb-12 text-center">Featured Articles</h2>
+				<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+					<article class="bg-white rounded-lg shadow-md overflow-hidden">
+						<img src="https://picsum.photos/seed/eco-home-1/800/600" alt="Winter Energy Tips" class="w-full h-48 object-cover" />
+						<div class="p-6">
+							<h3 class="font-playfair text-xl text-accent mb-3">Winter Energy Saving Tips</h3>
+							<p class="text-gray-600 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+							<a href="/articles/winter-energy-tips" class="text-primary font-semibold">Read More →</a>
+						</div>
+					</article>
+					<article class="bg-white rounded-lg shadow-md overflow-hidden">
+						<img src="https://picsum.photos/seed/eco-home-2/800/600" alt="Spring Garden" class="w-full h-48 object-cover" />
+						<div class="p-6">
+							<h3 class="font-playfair text-xl text-accent mb-3">Spring Garden Planning</h3>
+							<p class="text-gray-600 mb-4">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+							<a href="/articles/spring-garden-planning" class="text-primary font-semibold">Read More →</a>
+						</div>
+					</article>
+					<article class="bg-white rounded-lg shadow-md overflow-hidden">
+						<img src="https://picsum.photos/seed/eco-home-3/800/600" alt="Summer Water Conservation" class="w-full h-48 object-cover" />
+						<div class="p-6">
+							<h3 class="font-playfair text-xl text-accent mb-3">Summer Water Conservation</h3>
+							<p class="text-gray-600 mb-4">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+							<a href="/articles/water-conservation" class="text-primary font-semibold">Read More →</a>
+						</div>
+					</article>
+				</div>
+			</div>
+		</section>
+
+		<!-- About Section -->
+		<section class="py-20 bg-accent text-background">
+			<div class="container mx-auto px-4">
+				<div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+					<div>
+						<h2 class="font-playfair text-4xl mb-6">About Eco Home Seasons</h2>
+						<p class="text-lg mb-6">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+						</p>
+						<a
+							href="/about"
+							class="inline-block bg-primary text-accent px-6 py-3 rounded-lg font-semibold hover:bg-primary/90 transition-colors"
+						>
+							Learn More About Us
+						</a>
+					</div>
+					<div class="relative">
+						<img
+							src="https://picsum.photos/seed/eco-home-about/800/600"
+							alt="Sustainable Home"
+							class="rounded-lg shadow-xl"
+						/>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Newsletter Section -->
+		<section class="py-20">
+			<div class="container mx-auto px-4 text-center">
+				<h2 class="font-playfair text-4xl text-accent mb-6">Stay Connected</h2>
+				<p class="text-lg mb-8 max-w-2xl mx-auto">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+				</p>
+				<form class="max-w-md mx-auto">
+					<div class="flex gap-4">
+						<input
+							type="email"
+							placeholder="Enter your email"
+							class="flex-1 px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:border-accent"
+						/>
+						<button
+							type="submit"
+							class="bg-accent text-background px-6 py-3 rounded-lg font-semibold hover:bg-accent/90 transition-colors"
+						>
+							Subscribe
+						</button>
+					</div>
+				</form>
+			</div>
+		</section>
+	</main>
+</Layout>
